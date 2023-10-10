@@ -21,6 +21,7 @@ function App() {
         <Header />
         <Route path="/login" component={LoginPage}></Route>
         <Route path='/register' component={Register}></Route>
+        <Route exact path="/Crm_Task/" component={Homepage}/>
         <Route exact path="/" component={Homepage}/>
       </CustomApp>
     </BrowserRouter>
