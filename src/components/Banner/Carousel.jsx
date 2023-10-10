@@ -8,11 +8,6 @@ import { CryptoState } from '../../CryptoContext'
 
 const Carousel = () => {
 
-
-
-    // Styling starts here
-
-
     const StyledCarousel = styled('div')(({ theme }) => ({
         height: "50%",
         display: "flex",
@@ -28,16 +23,12 @@ const Carousel = () => {
         color: "white",
     }))
 
-    //styling ends here
-
-
     const [trending, setTrending] = useState([]);
 
     const { currency, symbol } = CryptoState();
 
     const fetchTrendingCoins = async () => {
 
-        //fetch trending coins here and set it inside trending state
         const { data } = await axios.get(TrendingCoins(currency));
         setTrending(data);
 
@@ -45,7 +36,6 @@ const Carousel = () => {
 
     useEffect(() => {
         fetchTrendingCoins();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [currency])
     
     const items = trending.map((coin) => {

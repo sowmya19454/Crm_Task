@@ -1,12 +1,5 @@
-// import Carousel from "./Carousel";
 import { Container, Typography, styled } from "@mui/material";
 import Carousel from "./Carousel";
-
-
-
-//styling starts here
-
-
 const ContainerBanner = styled(Container)(({ theme }) => ({
     height: 400,
     display: "flex",
@@ -23,9 +16,6 @@ const TagLine = styled('div')(({ theme }) => ({
     textAlign: "center",
 }))
 
-
-//styling ends here
-
 function Banner() {
     return (
             <ContainerBanner>
@@ -38,7 +28,17 @@ function Banner() {
                             fontFamily: "Roboto",
                         }}
                     >
-                        Crypto Watch
+                        Crypto CRM
+                    </Typography>
+                    <Typography
+                        variant="subtitle"
+                        style={{
+                            color: "darkgrey",
+                            textTransform: "capitalize",
+                            fontFamily: "Roboto",
+                        }}
+                    >
+                        Hii! Welcome Back 
                     </Typography>
                     <Typography
                         variant="subtitle2"

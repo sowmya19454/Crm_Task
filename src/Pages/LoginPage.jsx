@@ -9,8 +9,6 @@ const LoginPage = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    
-    // get the user data from the localStorage if matches take the user to Home page
     const login = JSON.parse(localStorage.getItem('credentials'));
     if (login && login.email===credentials.email && credentials.password===login.password) {
       history.push('/');

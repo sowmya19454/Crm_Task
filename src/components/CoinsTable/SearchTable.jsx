@@ -4,7 +4,6 @@ import millify from 'millify';
 import { Link } from 'react-router-dom';
 
 const SearchTable = ({ filteredCoins, loading, symbol, handleSearchChange }) => {
-    // State for Pagination
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(10);
 
@@ -30,7 +29,7 @@ const SearchTable = ({ filteredCoins, loading, symbol, handleSearchChange }) => 
         <ThemeProvider theme={darkTheme}>
             <Container>
                 <Typography variant='h4' style={{ margin: 18, fontFamily: "Roboto" }}>
-                    Cryptocurrency Prices by Market Cap
+                    Cryptocurrency Analysis
                 </Typography>
 
                 <TextField
